@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Voting System Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styledas.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='das.js') }}">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Uganda Martyrs University E-Voting System Dashboard</h1>
+    <h2>Vote for Your Leaders</h2>
+    <nav>
+      <a href="/">Home</a>
+      <a href="#candidates">Candidates</a>
+      <a href="#instructions">Voting Instructions</a>
+      <a href="#results">Results</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <section id="union-presidents">
+    <h3>Contesting Union Presidents</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre11.png') }}" alt="President 1">
+        <h4>John Doe</h4>
+        <p>Union President</p>
+        <div class="info">
+          <p>John's vision is to create a more inclusive and transparent student union.</p>
+        </div>
+        <button class="vote-button" data-category="union" data-candidate="John Doe">Vote</button>
+      </div>
+      <!-- Add more candidate cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre11.png') }}" alt="President 1">
+        <h4>John Doe</h4>
+        <p>Union President</p>
+        <div class="info">
+          <p>John's vision is to create a more inclusive and transparent student union.</p>
+        </div>
+        <button class="vote-button" data-category="union" data-candidate="John Doe">Vote</button>
+      </div>
+      <!-- Add more candidate cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre11.png') }}" alt="President 1">
+        <h4>John Doe</h4>
+        <p>Union President</p>
+        <div class="info">
+          <p>John's vision is to create a more inclusive and transparent student union.</p>
+        </div>
+        <button class="vote-button" data-category="union" data-candidate="John Doe">Vote</button>
+      </div>
+      <!-- Add more candidate cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre11.png') }}" alt="President 1">
+        <h4>John Doe</h4>
+        <p>Union President</p>
+        <div class="info">
+          <p>John's vision is to create a more inclusive and transparent student union.</p>
+        </div>
+        <button class="vote-button" data-category="union" data-candidate="John Doe">Vote</button>
+      </div>
+      <!-- Add more candidate cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre11.png') }}" alt="President 1">
+        <h4>John Doe</h4>
+        <p>Union President</p>
+        <div class="info">
+          <p>John's vision is to create a more inclusive and transparent student union.</p>
+        </div>
+        <button class="vote-button" data-category="union" data-candidate="John Doe">Vote</button>
+      </div>
+      <!-- Add more candidate cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre11.png') }}" alt="President 1">
+        <h4>John Doe</h4>
+        <p>Union President</p>
+        <div class="info">
+          <p>John's vision is to create a more inclusive and transparent student union.</p>
+        </div>
+        <button class="vote-button" data-category="union" data-candidate="John Doe">Vote</button>
+      </div>
+      <!-- Add more candidate cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre11.png') }}" alt="President 1">
+        <h4>John Doe</h4>
+        <p>Union President</p>
+        <div class="info">
+          <p>John's vision is to create a more inclusive and transparent student union.</p>
+        </div>
+        <button class="vote-button" data-category="union" data-candidate="John Doe">Vote</button>
+      </div>
+      <!-- Add more candidate cards here -->
+    </div>
+  </section>
+
+  <section id="faculty-reps">
+    <h3>Faculty Representatives</h3>
+
+    <h4>Faculty of Science</h4>
+    <div class="grid">
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre1.jpg') }}" alt="Representative 1">
+        <h4>Jane Smith</h4>
+        <p>Faculty of Science</p>
+        <div class="info">
+          <p>Jane aims to improve the resources available for science students.</p>
+        </div>
+        <button class="vote-button" data-category="science" data-candidate="Jane Smith">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre1.jpg') }}" alt="Representative 1">
+        <h4>Jane Smith</h4>
+        <p>Faculty of Science</p>
+        <div class="info">
+          <p>Jane aims to improve the resources available for science students.</p>
+        </div>
+        <button class="vote-button" data-category="science" data-candidate="Jane Smith">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre1.jpg') }}" alt="Representative 1">
+        <h4>Jane Smith</h4>
+        <p>Faculty of Science</p>
+        <div class="info">
+          <p>Jane aims to improve the resources available for science students.</p>
+        </div>
+        <button class="vote-button" data-category="science" data-candidate="Jane Smith">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre1.jpg') }}" alt="Representative 1">
+        <h4>Jane Smith</h4>
+        <p>Faculty of Science</p>
+        <div class="info">
+          <p>Jane aims to improve the resources available for science students.</p>
+        </div>
+        <button class="vote-button" data-category="science" data-candidate="Jane Smith">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre1.jpg') }}" alt="Representative 1">
+        <h4>Jane Smith</h4>
+        <p>Faculty of Science</p>
+        <div class="info">
+          <p>Jane aims to improve the resources available for science students.</p>
+        </div>
+        <button class="vote-button" data-category="science" data-candidate="Jane Smith">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre1.jpg') }}" alt="Representative 1">
+        <h4>Jane Smith</h4>
+        <p>Faculty of Science</p>
+        <div class="info">
+          <p>Jane aims to improve the resources available for science students.</p>
+        </div>
+        <button class="vote-button" data-category="science" data-candidate="Jane Smith">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre1.jpg') }}" alt="Representative 1">
+        <h4>Jane Smith</h4>
+        <p>Faculty of Science</p>
+        <div class="info">
+          <p>Jane aims to improve the resources available for science students.</p>
+        </div>
+        <button class="vote-button" data-category="science" data-candidate="Jane Smith">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      
+    </div>
+
+    <h4>Faculty of Education</h4>
+    <div class="grid">
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre13.jpg') }}" alt="Representative 2">
+        <h4>John Adams</h4>
+        <p>Faculty of Education</p>
+        <div class="info">
+          <p>John is dedicated to enhancing the quality of teacher training.</p>
+        </div>
+        <button class="vote-button" data-category="education" data-candidate="John Adams">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre13.jpg') }}" alt="Representative 2">
+        <h4>John Adams</h4>
+        <p>Faculty of Education</p>
+        <div class="info">
+          <p>John is dedicated to enhancing the quality of teacher training.</p>
+        </div>
+        <button class="vote-button" data-category="education" data-candidate="John Adams">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre13.jpg') }}" alt="Representative 2">
+        <h4>John Adams</h4>
+        <p>Faculty of Education</p>
+        <div class="info">
+          <p>John is dedicated to enhancing the quality of teacher training.</p>
+        </div>
+        <button class="vote-button" data-category="education" data-candidate="John Adams">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre13.jpg') }}" alt="Representative 2">
+        <h4>John Adams</h4>
+        <p>Faculty of Education</p>
+        <div class="info">
+          <p>John is dedicated to enhancing the quality of teacher training.</p>
+        </div>
+        <button class="vote-button" data-category="education" data-candidate="John Adams">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre13.jpg') }}" alt="Representative 2">
+        <h4>John Adams</h4>
+        <p>Faculty of Education</p>
+        <div class="info">
+          <p>John is dedicated to enhancing the quality of teacher training.</p>
+        </div>
+        <button class="vote-button" data-category="education" data-candidate="John Adams">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre13.jpg') }}" alt="Representative 2">
+        <h4>John Adams</h4>
+        <p>Faculty of Education</p>
+        <div class="info">
+          <p>John is dedicated to enhancing the quality of teacher training.</p>
+        </div>
+        <button class="vote-button" data-category="education" data-candidate="John Adams">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre13.jpg') }}" alt="Representative 2">
+        <h4>John Adams</h4>
+        <p>Faculty of Education</p>
+        <div class="info">
+          <p>John is dedicated to enhancing the quality of teacher training.</p>
+        </div>
+        <button class="vote-button" data-category="education" data-candidate="John Adams">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+    </div>
+
+    <h4>Faculty of Built Environment</h4>
+    <div class="grid">
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre3.jpg') }}" alt="Representative 3">
+        <h4>Emily Brown</h4>
+        <p>Faculty of Built Environment</p>
+        <div class="info">
+          <p>Emily plans to focus on sustainable building practices.</p>
+        </div>
+        <button class="vote-button" data-category="built-environment" data-candidate="Emily Brown">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre3.jpg') }}" alt="Representative 3">
+        <h4>Emily Brown</h4>
+        <p>Faculty of Built Environment</p>
+        <div class="info">
+          <p>Emily plans to focus on sustainable building practices.</p>
+        </div>
+        <button class="vote-button" data-category="built-environment" data-candidate="Emily Brown">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre3.jpg') }}" alt="Representative 3">
+        <h4>Emily Brown</h4>
+        <p>Faculty of Built Environment</p>
+        <div class="info">
+          <p>Emily plans to focus on sustainable building practices.</p>
+        </div>
+        <button class="vote-button" data-category="built-environment" data-candidate="Emily Brown">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre3.jpg') }}" alt="Representative 3">
+        <h4>Emily Brown</h4>
+        <p>Faculty of Built Environment</p>
+        <div class="info">
+          <p>Emily plans to focus on sustainable building practices.</p>
+        </div>
+        <button class="vote-button" data-category="built-environment" data-candidate="Emily Brown">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre3.jpg') }}" alt="Representative 3">
+        <h4>Emily Brown</h4>
+        <p>Faculty of Built Environment</p>
+        <div class="info">
+          <p>Emily plans to focus on sustainable building practices.</p>
+        </div>
+        <button class="vote-button" data-category="built-environment" data-candidate="Emily Brown">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre3.jpg') }}" alt="Representative 3">
+        <h4>Emily Brown</h4>
+        <p>Faculty of Built Environment</p>
+        <div class="info">
+          <p>Emily plans to focus on sustainable building practices.</p>
+        </div>
+        <button class="vote-button" data-category="built-environment" data-candidate="Emily Brown">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre3.jpg') }}" alt="Representative 3">
+        <h4>Emily Brown</h4>
+        <p>Faculty of Built Environment</p>
+        <div class="info">
+          <p>Emily plans to focus on sustainable building practices.</p>
+        </div>
+        <button class="vote-button" data-category="built-environment" data-candidate="Emily Brown">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+    </div>
+
+    <h4>Faculty of Business Administration</h4>
+    <div class="grid">
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre4.webp') }}" alt="Representative 4">
+        <h4>Michael Johnson</h4>
+        <p>Faculty of Business</p>
+        <div class="info">
+          <p>Michael's goal is to improve networking opportunities for business students.</p>
+        </div>
+        <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre4.webp') }}" alt="Representative 4">
+        <h4>Michael Johnson</h4>
+        <p>Faculty of Business</p>
+        <div class="info">
+          <p>Michael's goal is to improve networking opportunities for business students.</p>
+        </div>
+        <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre4.webp') }}" alt="Representative 4">
+        <h4>Michael Johnson</h4>
+        <p>Faculty of Business</p>
+        <div class="info">
+          <p>Michael's goal is to improve networking opportunities for business students.</p>
+        </div>
+        <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre4.webp') }}" alt="Representative 4">
+        <h4>Michael Johnson</h4>
+        <p>Faculty of Business</p>
+        <div class="info">
+          <p>Michael's goal is to improve networking opportunities for business students.</p>
+        </div>
+        <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre4.webp') }}" alt="Representative 4">
+        <h4>Michael Johnson</h4>
+        <p>Faculty of Business</p>
+        <div class="info">
+          <p>Michael's goal is to improve networking opportunities for business students.</p>
+        </div>
+        <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre4.webp') }}" alt="Representative 4">
+        <h4>Michael Johnson</h4>
+        <p>Faculty of Business</p>
+        <div class="info">
+          <p>Michael's goal is to improve networking opportunities for business students.</p>
+        </div>
+        <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre4.webp') }}" alt="Representative 4">
+        <h4>Michael Johnson</h4>
+        <p>Faculty of Business</p>
+        <div class="info">
+          <p>Michael's goal is to improve networking opportunities for business students.</p>
+        </div>
+        <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+      </div>
+      <!-- Add more representative cards here -->
+    </div>
+ <!-- Add more faculties as needed -->
+ <h4>Faculty of Social Sciences </h4>
+ <div class="grid">
+   <div class="card">
+     <img src="{{ url_for('static', filename='pre5.jpg') }}" alt="Representative 4">
+     <h4>Michael Johnson</h4>
+     <p>Faculty of Business</p>
+     <div class="info">
+       <p>Michael's goal is to improve networking opportunities for business students.</p>
+     </div>
+     <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+   </div>
+   <!-- Add more representative cards here -->
+   <div class="card">
+    <img src="{{ url_for('static', filename='pre5.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+  <div class="card">
+    <img src="{{ url_for('static', filename='pre5.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+  <div class="card">
+    <img src="{{ url_for('static', filename='pre5.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+  <div class="card">
+    <img src="{{ url_for('static', filename='pre5.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+  <div class="card">
+    <img src="{{ url_for('static', filename='pre5.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+  <div class="card">
+    <img src="{{ url_for('static', filename='pre5.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+ </div>
+<!-- Add more faculties as needed -->
+<h4>Faculty of Agriculture</h4>
+<div class="grid">
+  <div class="card">
+    <img src="{{ url_for('static', filename='pre7.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+  <div class="card">
+    <img src="{{ url_for('static', filename='pre7.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+  <div class="card">
+    <img src="{{ url_for('static', filename='pre7.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+  <div class="card">
+    <img src="{{ url_for('static', filename='pre7.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+  <div class="card">
+    <img src="{{ url_for('static', filename='pre7.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+  <div class="card">
+    <img src="{{ url_for('static', filename='pre7.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+  <div class="card">
+    <img src="{{ url_for('static', filename='pre7.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+</div>
+<!-- Add more faculties as needed -->
+
+
+
+ <h4>Faculty of Health Sciences</h4>
+ <div class="grid">
+   <div class="card">
+     <img src="{{ url_for('static', filename='pre10.jpg') }}" alt="Representative 4">
+     <h4>Michael Johnson</h4>
+     <p>Faculty of Business</p>
+     <div class="info">
+       <p>Michael's goal is to improve networking opportunities for business students.</p>
+     </div>
+     <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+   </div>
+   <!-- Add more representative cards here -->
+   <div class="card">
+    <img src="{{ url_for('static', filename='pre10.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+  <div class="card">
+    <img src="{{ url_for('static', filename='pre10.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+  <div class="card">
+    <img src="{{ url_for('static', filename='pre10.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+  <div class="card">
+    <img src="{{ url_for('static', filename='pre10.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+  <div class="card">
+    <img src="{{ url_for('static', filename='pre10.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+  <div class="card">
+    <img src="{{ url_for('static', filename='pre10.jpg') }}" alt="Representative 4">
+    <h4>Michael Johnson</h4>
+    <p>Faculty of Business</p>
+    <div class="info">
+      <p>Michael's goal is to improve networking opportunities for business students.</p>
+    </div>
+    <button class="vote-button" data-category="business" data-candidate="Michael Johnson">Vote</button>
+  </div>
+  <!-- Add more representative cards here -->
+ </div>
+<!-- Add more faculties as needed -->
+
+
+    <!-- Add more faculties as needed -->
+  </section>
+
+  <section id="hall-councilors">
+    <h3>Hall Councilors</h3>
+
+    <h4>ONYANGO HALL</h4>
+    <div class="grid">
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre12.jpg') }}" alt="Councilor 1">
+        <h4>Emily Johnson</h4>
+        <p>ONYANGO HALL</p>
+        <div class="info">
+          <p>Emily promises to enhance the living conditions and community activities in Hall 1.</p>
+        </div>
+        <button class="vote-button" data-category="hall1" data-candidate="Emily Johnson">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre12.jpg') }}" alt="Councilor 1">
+        <h4>Emily Johnson</h4>
+        <p>ONYANGO HALL</p>
+        <div class="info">
+          <p>Emily promises to enhance the living conditions and community activities in Hall 1.</p>
+        </div>
+        <button class="vote-button" data-category="hall1" data-candidate="Emily Johnson">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre12.jpg') }}" alt="Councilor 1">
+        <h4>Emily Johnson</h4>
+        <p>ONYANGO HALL</p>
+        <div class="info">
+          <p>Emily promises to enhance the living conditions and community activities in Hall 1.</p>
+        </div>
+        <button class="vote-button" data-category="hall1" data-candidate="Emily Johnson">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre12.jpg') }}" alt="Councilor 1">
+        <h4>Emily Johnson</h4>
+        <p>ONYANGO HALL</p>
+        <div class="info">
+          <p>Emily promises to enhance the living conditions and community activities in Hall 1.</p>
+        </div>
+        <button class="vote-button" data-category="hall1" data-candidate="Emily Johnson">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre12.jpg') }}" alt="Councilor 1">
+        <h4>Emily Johnson</h4>
+        <p>ONYANGO HALL</p>
+        <div class="info">
+          <p>Emily promises to enhance the living conditions and community activities in Hall 1.</p>
+        </div>
+        <button class="vote-button" data-category="hall1" data-candidate="Emily Johnson">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre12.jpg') }}" alt="Councilor 1">
+        <h4>Emily Johnson</h4>
+        <p>ONYANGO HALL</p>
+        <div class="info">
+          <p>Emily promises to enhance the living conditions and community activities in Hall 1.</p>
+        </div>
+        <button class="vote-button" data-category="hall1" data-candidate="Emily Johnson">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="{{ url_for('static', filename='pre12.jpg') }}" alt="Councilor 1">
+        <h4>Emily Johnson</h4>
+        <p>ONYANGO HALL</p>
+        <div class="info">
+          <p>Emily promises to enhance the living conditions and community activities in Hall 1.</p>
+        </div>
+        <button class="vote-button" data-category="hall1" data-candidate="Emily Johnson">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="councilor1.jpg" alt="Councilor 1">
+        <h4>Emily Johnson</h4>
+        <p>ONYANGO HALL</p>
+        <div class="info">
+          <p>Emily promises to enhance the living conditions and community activities in Hall 1.</p>
+        </div>  
+        <button class="vote-button" data-category="hall1" data-candidate="Emily Johnson">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="councilor1.jpg" alt="Councilor 1">
+        <h4>Emily Johnson</h4>
+        <p>ONYANGO HALL</p>
+        <div class="info">
+          <p>Emily promises to enhance the living conditions and community activities in Hall 1.</p>
+        </div>
+        <button class="vote-button" data-category="hall1" data-candidate="Emily Johnson">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+    </div>
+
+    <h4>MICHEAL HALL</h4>
+    <div class="grid">
+      <div class="card">
+        <img src="councilor2.jpg" alt="Councilor 2">
+        <h4>David Lee</h4>
+        <p>MICHEAL HALL</p>
+        <div class="info">
+          <p>David aims to improve the facilities in Hall 2.</p>
+        </div>
+        <button class="vote-button" data-category="hall2" data-candidate="David Lee">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="councilor2.jpg" alt="Councilor 2">
+        <h4>David Lee</h4>
+        <p>MICHEAL HALL</p>
+        <div class="info">
+          <p>David aims to improve the facilities in Hall 2.</p>
+        </div>
+        <button class="vote-button" data-category="hall2" data-candidate="David Lee">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="councilor2.jpg" alt="Councilor 2">
+        <h4>David Lee</h4>
+        <p>MICHEAL HALL</p>
+        <div class="info">
+          <p>David aims to improve the facilities in Hall 2.</p>
+        </div>
+        <button class="vote-button" data-category="hall2" data-candidate="David Lee">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+    </div>
+
+    <h4>CARABINE HALL</h4>
+    <div class="grid">
+      <div class="card">
+        <img src="councilor3.jpg" alt="Councilor 3">
+        <h4>Sarah White</h4>
+        <p>CARABINE HALL</p>
+        <div class="info">
+          <p>Sarah is committed to organizing more community events.</p>
+        </div>
+        <button class="vote-button" data-category="hall3" data-candidate="Sarah White">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="councilor3.jpg" alt="Councilor 3">
+        <h4>Sarah White</h4>
+        <p>CARABINE HALL</p>
+        <div class="info">
+          <p>Sarah is committed to organizing more community events.</p>
+        </div>
+        <button class="vote-button" data-category="hall3" data-candidate="Sarah White">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="councilor3.jpg" alt="Councilor 3">
+        <h4>Sarah White</h4>
+        <p>CARABINE HALL</p>
+        <div class="info">
+          <p>Sarah is committed to organizing more community events.</p>
+        </div>
+        <button class="vote-button" data-category="hall3" data-candidate="Sarah White">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+    </div>
+
+    <h4>HALFLET HALL</h4>
+    <div class="grid">
+      <div class="card">
+        <img src="councilor4.jpg" alt="Councilor 4">
+        <h4>Chris Green</h4>
+        <p>HALFLET HALL</p>
+        <div class="info">
+          <p>Chris wants to focus on security improvements in Hall 4.</p>
+        </div>
+        <button class="vote-button" data-category="hall4" data-candidate="Chris Green">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="councilor4.jpg" alt="Councilor 4">
+        <h4>Chris Green</h4>
+        <p>Hall 4</p>
+        <div class="info">
+          <p>Chris wants to focus on security improvements in Hall 4.</p>
+        </div>
+        <button class="vote-button" data-category="hall4" data-candidate="Chris Green">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="councilor4.jpg" alt="Councilor 4">
+        <h4>Chris Green</h4>
+        <p>Hall 4</p>
+        <div class="info">
+          <p>Chris wants to focus on security improvements in Hall 4.</p>
+        </div>
+        <button class="vote-button" data-category="hall4" data-candidate="Chris Green">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+    </div>
+    <!-- Add more halls as needed -->
+    <h4>CAMPBELL</h4>
+    <div class="grid">
+      <div class="card">
+        <img src="councilor4.jpg" alt="Councilor 4">
+        <h4>Chris Green</h4>
+        <p>HALFLET HALL</p>
+        <div class="info">
+          <p>Chris wants to focus on security improvements in Hall 4.</p>
+        </div>
+        <button class="vote-button" data-category="hall4" data-candidate="Chris Green">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="councilor4.jpg" alt="Councilor 4">
+        <h4>Chris Green</h4>
+        <p>Hall 4</p>
+        <div class="info">
+          <p>Chris wants to focus on security improvements in Hall 4.</p>
+        </div>
+        <button class="vote-button" data-category="hall4" data-candidate="Chris Green">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="councilor4.jpg" alt="Councilor 4">
+        <h4>Chris Green</h4>
+        <p>Hall 4</p>
+        <div class="info">
+          <p>Chris wants to focus on security improvements in Hall 4.</p>
+        </div>
+        <button class="vote-button" data-category="hall4" data-candidate="Chris Green">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+    </div>
+
+
+    <!-- Add more halls as needed -->
+    <h4>MUKASA HALL</h4>
+    <div class="grid">
+      <div class="card">
+        <img src="councilor4.jpg" alt="Councilor 4">
+        <h4>Chris Green</h4>
+        <p>HALFLET HALL</p>
+        <div class="info">
+          <p>Chris wants to focus on security improvements in Hall 4.</p>
+        </div>
+        <button class="vote-button" data-category="hall4" data-candidate="Chris Green">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="councilor4.jpg" alt="Councilor 4">
+        <h4>Chris Green</h4>
+        <p>Hall 4</p>
+        <div class="info">
+          <p>Chris wants to focus on security improvements in Hall 4.</p>
+        </div>
+        <button class="vote-button" data-category="hall4" data-candidate="Chris Green">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="councilor4.jpg" alt="Councilor 4">
+        <h4>Chris Green</h4>
+        <p>Hall 4</p>
+        <div class="info">
+          <p>Chris wants to focus on security improvements in Hall 4.</p>
+        </div>
+        <button class="vote-button" data-category="hall4" data-candidate="Chris Green">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+    </div>
+
+
+
+    <h4>MARTYRS HALL</h4>
+    <div class="grid">
+      <div class="card">
+        <img src="councilor4.jpg" alt="Councilor 4">
+        <h4>Chris Green</h4>
+        <p>HALFLET HALL</p>
+        <div class="info">
+          <p>Chris wants to focus on security improvements in Hall 4.</p>
+        </div>
+        <button class="vote-button" data-category="hall4" data-candidate="Chris Green">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="councilor4.jpg" alt="Councilor 4">
+        <h4>Chris Green</h4>
+        <p>Hall 4</p>
+        <div class="info">
+          <p>Chris wants to focus on security improvements in Hall 4.</p>
+        </div>
+        <button class="vote-button" data-category="hall4" data-candidate="Chris Green">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+      <div class="card">
+        <img src="councilor4.jpg" alt="Councilor 4">
+        <h4>Chris Green</h4>
+        <p>Hall 4</p>
+        <div class="info">
+          <p>Chris wants to focus on security improvements in Hall 4.</p>
+        </div>
+        <button class="vote-button" data-category="hall4" data-candidate="Chris Green">Vote</button>
+      </div>
+      <!-- Add more councilor cards here -->
+    </div>
+    <!--add-- more halls here-->
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

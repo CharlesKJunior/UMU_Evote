@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uganda Martyrs University Voting System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="{{ url_for('static', filename='logo5.png') }}" alt="University Logo" class="logo">
+            <h1>Welcome To Uganda Martyrs University E-voting System</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2> Future of Voting</h2>
+            <p>Experience a seamless, transparent, and secure voting process.</p>
+            <a href="/login" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <img src="{{ url_for('static', filename='secur.jpg') }}" alt="Secure Voting" class="feature-img">
+                <i class="fas fa-shield-alt badge"></i>
+                <h3>Secure</h3>
+                <p>State-of-the-art security ensures your vote is safe and confidential.</p>
+            </div>
+            <div class="feature">
+                <img src="{{ url_for('static', filename='secure.webp') }}" alt="Convenient Voting" class="feature-img">
+                <i class="fas fa-clock badge"></i>
+                <h3>Convenient</h3>
+                <p>Vote from anywhere at any time during the voting period.</p>
+            </div>
+            <div class="feature">
+                <img src="{{ url_for('static', filename='accessible.jpg') }}" alt="Accessible Voting" class="feature-img">
+                <i class="fas fa-user-friends badge"></i>
+                <h3>Accessible</h3>
+                <p>Easy to use interface for all students and staff.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Uganda Martyrs University. All rights reserved.</p>
+            <p>&copy; 2024 Mutebwa Charles Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
